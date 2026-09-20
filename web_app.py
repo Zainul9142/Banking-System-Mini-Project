@@ -645,5 +645,7 @@ def api_change_pin():
 
 
 if __name__ == "__main__":
-    print("🚀 NextGen Banking Web Portal is running at: http://127.0.0.1:5000")
-    app.run(debug=True, port=5000)
+    print("[*] NextGen Banking Web Portal is running at: http://localhost:5000")
+    print("[*] Access in your browser at: http://localhost:5000 or http://127.0.0.1:5000")
+    app.run(host="0.0.0.0", port=5000, debug=False)
+
