@@ -46,8 +46,9 @@ def record_transaction(account_number, trans_type, amount, details=""):
 class BankingGUIApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("🏦 NextGen Banking System")
+        self.title("Banking System Interface")
         self.geometry("900x650")
+
         self.minsize(850, 600)
         self.configure(bg="#0f172a")  # Slate-900 dark background
 
@@ -180,8 +181,8 @@ class BankingGUIApp(tk.Tk):
         header_frame = ttk.Frame(self.auth_frame)
         header_frame.pack(pady=(20, 30))
 
-        ttk.Label(header_frame, text="🏦 NextGen Banking System", style="Title.TLabel").pack()
-        ttk.Label(header_frame, text="Secure, Fast & Menu-Driven Digital Banking", style="Subtitle.TLabel").pack(pady=4)
+        ttk.Label(header_frame, text="Banking System Interface", style="Title.TLabel").pack()
+
 
         # Card container with two tabs/cards: Login & Create Account
         cards_row = ttk.Frame(self.auth_frame)

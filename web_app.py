@@ -77,7 +77,8 @@ HTML_TEMPLATE = """
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banking System Dashboard</title>
+  <title>Banking System Interface</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
@@ -94,10 +95,10 @@ HTML_TEMPLATE = """
           🏦
         </div>
         <div>
-          <h1 class="text-xl font-bold text-white tracking-tight">NextGen Banking System</h1>
-          <p class="text-xs text-slate-400">EWB Python With AI • Mini Project</p>
+          <h1 class="text-xl font-bold text-white tracking-tight">Banking System Interface</h1>
         </div>
       </div>
+
       <div id="authStatus" class="flex items-center gap-3"></div>
     </header>
 

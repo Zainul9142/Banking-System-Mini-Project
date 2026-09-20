@@ -1,18 +1,3 @@
-"""
-================================================================================
-BANKING SYSTEM - MINI PROJECT
-================================================================================
-A Python-based menu-driven banking application simulating real-world banking
-operations such as account creation, secure login, deposits, withdrawals,
-fund transfers, transaction history tracking, and PIN management.
-
-Author: EWB Python with AI Internship Student
-Modules Used:
-  - random: For generating unique account numbers
-  - datetime: For recording exact transaction timestamps
-================================================================================
-"""
-
 import random
 import datetime
 
