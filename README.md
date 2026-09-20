@@ -1,11 +1,14 @@
 # 🏦 Banking System – Mini Project
 
-A Python-based menu-driven banking application that simulates real-world banking operations. It enables users to create a bank account, securely authenticate with an Account Number and PIN, check balances, deposit/withdraw money, transfer funds between accounts, view timestamped transaction history, and manage security PINs.
+A comprehensive Python-based banking application that simulates real-world banking operations. It provides **three interactive interfaces**:
+1. 🖥️ **Desktop GUI Application (`gui_app.py`)** — Built with Python's Tkinter & TTK.
+2. 🌐 **Modern Web Application (`web_app.py`)** — Built with Flask and Tailwind CSS.
+3. ⚡ **Command-Line Interface (`banking_system.py`)** — Menu-driven console interface.
 
 ---
 
 ## 📌 Project Overview
-The **Banking System Mini Project** combines core Python programming concepts into a unified, practical, and functional application. It replicates essential functionalities of banking portals and ATM software through an interactive command-line interface.
+The **Banking System Mini Project** combines core Python programming concepts into a unified, practical, and functional application. It replicates essential functionalities of banking portals and ATM software through both graphical and command-line interfaces.
 
 ---
 
@@ -77,7 +80,7 @@ The **Banking System Mini Project** combines core Python programming concepts in
 | **Loops** | `while` loops for menu persistence and re-prompting on invalid inputs |
 | **Functions** | Modular function design (`create_account`, `login`, `deposit_money`, `withdraw_money`, `transfer_money`, etc.) |
 | **Data Structures** | Nested **Dictionaries** for account storage and **Lists** for transaction logs |
-| **String Operations** | String formatting, stripping, validation, and table alignments |
+| **GUI & Web Frameworks** | **Tkinter / TTK** for desktop interface, **Flask** for web dashboard |
 | **`random` Module** | Auto-generating non-colliding 8-digit account numbers |
 | **`datetime` Module** | Recording exact timestamps for each transaction record |
 
@@ -88,24 +91,39 @@ The **Banking System Mini Project** combines core Python programming concepts in
 ```
 PythonAI/
 │
-├── banking_system.py       # Main application source code
-├── test_banking_system.py  # Unit tests covering all banking operations
-└── README.md               # Project documentation and instructions
+├── gui_app.py              # 🖥️ Desktop GUI Application (Tkinter)
+├── web_app.py              # 🌐 Modern Web Portal (Flask + Tailwind CSS)
+├── banking_system.py       # ⚡ Console / Terminal CLI Application
+├── test_banking_system.py  # 🧪 Unit test suite covering all banking operations
+├── run_gui.bat             # 🚀 1-Click Desktop App Launcher (Windows)
+├── run_web.bat             # 🚀 1-Click Web App Launcher (Windows)
+├── .gitignore              # 🙈 Git ignore configuration
+└── README.md               # 📖 Project documentation and instructions
 ```
 
 ---
 
-## 💻 How to Run the Project
+## 💻 How to Run
 
-### Prerequisites
-* Python 3.8 or higher installed on your system.
+### 1. Launch Desktop GUI (Recommended)
+Double-click `run_gui.bat` or run:
+```bash
+python gui_app.py
+```
 
-### Running the Application
+### 2. Launch Web Dashboard
+Double-click `run_web.bat` or run:
+```bash
+python web_app.py
+```
+Then open your browser at: `http://127.0.0.1:5000`
+
+### 3. Launch Console / CLI App
 ```bash
 python banking_system.py
 ```
 
-### Running Automated Unit Tests
+### 4. Run Automated Unit Tests
 ```bash
 python -m unittest test_banking_system.py
 ```
@@ -116,25 +134,13 @@ python -m unittest test_banking_system.py
 
 To submit this project for the **EWB Python with AI Internship**:
 
-1. **Initialize Git & Commit:**
+1. **Push Changes to GitHub:**
    ```bash
-   git init
    git add .
-   git commit -m "feat: complete Banking System mini project"
+   git commit -m "feat: add Desktop GUI and Web Dashboard interfaces"
+   git push origin main
    ```
 
-2. **Create a GitHub Repository:**
-   * Go to [GitHub](https://github.com) -> Click **New Repository**.
-   * Name your repository (e.g., `EWB-Banking-System-Mini-Project`).
-   * Keep it **Public**.
-
-3. **Push Code to GitHub:**
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo-name>.git
-   git push -u origin main
-   ```
-
-4. **Submit Google Form:**
-   * Copy your GitHub repository URL.
-   * Fill out and submit the Google Form provided by the management before **25th September**.
+2. **Submit Google Form:**
+   * URL: `https://github.com/Zainul9142/Banking-System-Mini-Project`
+   * Submit through the Google Form provided by the management before **25th September**.
